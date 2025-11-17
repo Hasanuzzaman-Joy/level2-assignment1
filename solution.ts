@@ -16,4 +16,15 @@ function formatValue(value:Primitive_1):Primitive_1{
 
 
 
+type GetLength = string | any[];
+
+function getLength(value: GetLength):number{
+    if(typeof value === 'string'){
+        return value.length;
+    }
+    else if(Array.isArray(value)){
+        return value.length;
+    }
+    return 0;
+}
 
