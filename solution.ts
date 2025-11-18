@@ -78,7 +78,12 @@ function filterByRating(arr: ArrayOfObjects): ArrayOfObjects {
 
 
 
-// 5th Task
+
+
+
+
+
+
 
 interface User {
   id: number;
@@ -93,7 +98,13 @@ function filterActiveUsers(arr: ArrayOfUserObjects): ArrayOfUserObjects {
   return arr.filter((user) => user.isActive === true);
 }
 
-// 6th Task
+
+
+
+
+
+
+
 
 interface Book {
   title: string;
@@ -103,14 +114,15 @@ interface Book {
 }
 
 function printBookDetails(book: Book) {
-  console.log(
-    `Title: ${book.title}, Author: ${book.author}, Published: ${
-      book.publishedYear
-    }, Available: ${book.isAvailable ? "Yes" : "No"}`
-  );
+  console.log(`Title: ${book.title}, Author: ${book.author}, Published: ${book.publishedYear}, Available: ${book.isAvailable ? "Yes" : "No"}`);
 }
 
-// 7th Task
+
+
+
+
+
+
 
 type ArrayValues = string | number;
 
@@ -153,7 +165,12 @@ function getUniqueValues(
   return result;
 }
 
-// 8th Task
+
+
+
+
+
+
 
 interface Product {
   name: string;
@@ -172,3 +189,5 @@ function calculateTotalPrice(products: ArrayOfProducts): number {
   });
   return total.reduce((initial, productTotal) => initial + productTotal, 0);
 }
+
+
