@@ -113,7 +113,7 @@ interface Book {
   isAvailable: boolean;
 }
 
-function printBookDetails(book: Book) {
+function printBookDetails(book: Book){
   console.log(`Title: ${book.title}, Author: ${book.author}, Published: ${book.publishedYear}, Available: ${book.isAvailable ? "Yes" : "No"}`);
 }
 

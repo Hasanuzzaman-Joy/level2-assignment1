@@ -11,13 +11,11 @@ interface মূলত অবজেক্ট বা ক্লাসের কা
 ## 2. What is the use of the keyof keyword in TypeScript? Provide an example.
 
 Answer: keyof ব্যবহার করা হয় কোনো অবজেক্ট টাইপের সমস্ত প্রপার্টির নাম পাওয়ার জন্য। উদাহরণ:
-
 interface Person {
   name: string;
   age: number;
 }
-
-type PersonKeys = keyof Person;              // "name" | "age"
+type PersonKeys = keyof Person;     
 
 
 -----------------------------------------------------------------------------------
