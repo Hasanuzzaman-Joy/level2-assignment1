@@ -10,7 +10,6 @@ function formatValue(value: Primitive): Primitive {
   }
 }
 
-
 // 2nd Task
 
 type GetLength = string | any[];
@@ -23,10 +22,6 @@ function getLength(value: GetLength): number {
   }
   return 0;
 }
-
-
-
-
 
 //  3rd Task
 
@@ -43,9 +38,6 @@ class Person {
     return `'Name: ${this.name}, Age: ${this.age}'`;
   }
 }
-
-
-
 
 // 4th Task
 
@@ -67,7 +59,34 @@ function filterByRating(arr: ArrayOfObjects): ArrayOfObjects {
   return newArr;
 }
 
-
-
-
 // 5th Task
+
+interface User {
+  id: number;
+  name: string;
+  email: string;
+  isActive: boolean;
+}
+
+type ArrayOfUserObjects = User[];
+
+function filterActiveUsers(arr: ArrayOfUserObjects): ArrayOfUserObjects {
+  return arr.filter((user) => user.isActive === true);
+}
+
+// 6th Task
+
+interface Book {
+  title: string;
+  author: string;
+  publishedYear: number;
+  isAvailable: boolean;
+}
+
+function printBookDetails(book: Book) {
+  console.log(
+    `Title: ${book.title}, Author: ${book.author}, Published: ${
+      book.publishedYear
+    }, Available: ${book.isAvailable ? "Yes" : "No"}`
+  );
+}
